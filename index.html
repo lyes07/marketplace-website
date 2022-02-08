@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Market Place</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="welcome">
+        <h3 id="a">Welcome to Lyes Market Place where you can Buy ,Sell and Search for all kind of items</h3>
+        <h3 id="b">To add an item you have to <u>Sign Up</u> (or <u>Log In</u> if you already have an account)</h3>
+        
+    </div>
+    <div class="head" id="head">
+        <div class="sign">
+            <form id="inForm"></form>  
+            <button id="signIn" class="button">Log In</button>
+        </div>  
+        <div style="height: 10px;"></div>
+        <div class="sign">
+            <form id="upForm"></form>  
+            <button id="signUp" class="button">Sign Up</button>
+        </div > 
+    </div>
+    <div id="afterSign"></div>
+        <div id="response"></div>  
+        <div id="addItem" class="addItem">
+            <form id="addForm"></form>
+            <button id="add" class="button">Add Item</button>
+            <div id="addResponse"></div>
+        </div>
+    </div>
+
+    <div class="bodyPart" style="display: flex;align-items: center;flex-direction: column;">
+        <h1 class="centered">Market Place</h1>
+    </div>
+      
+    
+    <div class="search" style="display: flex;flex-direction: column;align-items: center;">
+        <input type="text" name="search_box" style="height: 50px; width: 600px;margin-bottom: 5px;border: 1px solid gray;border-radius: 5px;padding: 2px 20px 2px 20px;outline: 0;background-color: #f5f5f5;" placeholder="Search..." onkeyup="javascript:load(this.value)">
+        <span id="search_result"></span>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
